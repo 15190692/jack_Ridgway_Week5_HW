@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.csis.lab05.MainActivity">
+
+
+    <Switch
+        android:text="On/Off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:id="@+id/onOff" />
+
+    <TextView
+        android:text="Acclerometer X"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/onOff"
+        android:layout_toStartOf="@+id/onOff"
+        android:layout_marginEnd="22dp"
+        android:layout_marginTop="90dp"
+        android:id="@+id/AccelXText" />
+
+    <TextView
+        android:text="X VALUE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/AccelXText"
+        android:layout_toEndOf="@+id/onOff"
+        android:layout_marginStart="6dp"
+        android:id="@+id/AccelXValue" />
+
+    <TextView
+        android:text="Y VALUE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/AccelYText"
+        android:layout_toEndOf="@+id/onOff"
+        android:id="@+id/AccelYValue" />
+
+    <TextView
+        android:text="Accelerometer Y"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="57dp"
+        android:id="@+id/AccelYText"
+        android:layout_below="@+id/AccelXText"
+        android:layout_alignStart="@+id/AccelXText" />
+
+    <TextView
+        android:text="Accelerometer Z"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AccelYText"
+        android:layout_alignStart="@+id/AccelYText"
+        android:layout_marginTop="67dp"
+        android:id="@+id/AccelZText" />
+
+    <TextView
+        android:text="Z VALUE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/AccelZValue"
+        android:layout_alignBaseline="@+id/AccelZText"
+        android:layout_alignBottom="@+id/AccelZText"
+        android:layout_alignStart="@+id/AccelXValue" />
+</RelativeLayout>
